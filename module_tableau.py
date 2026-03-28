@@ -271,25 +271,5 @@ def recherche_dichotomie(table, valeur):
     return dichotomie(tab, valeur, 0, len(tab) - 1)
 
 
-# Démonstration si exécuté directement
-if __name__ == "__main__":
-    print("Démonstration du module_tableau :\n")
-    lignes, colonnes = 3, 3
-    tab = generer_tableau(lignes, colonnes)
-    print("Tableau généré :")
-    afficher_tableau(tab)
-    print("\nTri à bulle :")
-    afficher_tableau(tri_bulle(tab))
-    print("\nTri par sélection :")
-    afficher_tableau(tri_selection(tab))
-    print("\nTri par insertion :")
-    afficher_tableau(tri_insertion(tab))
-    print("\nTri rapide :")
-    afficher_tableau(tri_rapide(tab))
-    print("\nTri par fusion :")
-    afficher_tableau(tri_fusion(tab))
-    valeur = tab[0][0]
-    print(f"\nRecherche linéaire de {valeur} :", recherche_lineaire(tab, valeur))
-    tab_trie = tri_fusion(tab)
-    print(f"Recherche binaire de {valeur} :", recherche_binaire(tab_trie, valeur))
-    print(f"Recherche dichotomie de {valeur} :", recherche_dichotomie(tab_trie, valeur))
+
+  
